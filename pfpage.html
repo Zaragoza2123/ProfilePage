@@ -27,14 +27,14 @@
                 <section class="sec1">
                     <div class="banner"></div>
                     <img class="icon" src="img_534267.png" alt="Profile Image Icon">
-                    <h1>Sebastian Zaragoza</h1>
+                    <h1 id="cha">Sebastian Zaragoza</h1>
                     <h2 class="location">
                         <img class="ping" src="1614282895__icons\icons\map-marker.png" alt="Ping">
                         <p>Chicago</p>
                     </h2>
                     <p>Developer I Engineer I Problem Solve<br>
                         Master of Skateboarding the Internet</p>
-                    <a href="#"><img class="link" src="1614282895__icons\icons\gear.png" alt="Settings Icon"> edit
+                    <a onclick = "change()" href="#"><img class="link" src="1614282895__icons\icons\gear.png" alt="Settings Icon"> edit
                         profile</a>
                 </section>
                 <section class="sec2">
@@ -48,16 +48,16 @@
             </div>
             <div class="rightside">
                 <aside class="top">
-                    <h4><span class="circle1">2</span>Connections Requests</h4>
-                    <p><img src="images\todd-s.jpg" alt="Pofile Picture">Todd E<img
-                            src="1614282895__icons\icons\accept-circle.png" alt="check circle"><img
-                            src="1614282895__icons\icons\close-circle.png" alt="X-circle"> </p>
-                    <p><img src="images\phil-s.jpg" alt="Pofile Picture"> Phil K <img
-                            src="1614282895__icons\icons\accept-circle.png" alt="check circle"><img
-                            src="1614282895__icons\icons\close-circle.png" alt="X-circle"> </p>
+                    <h4><span id="circle" class="circle1">2</span>Connections Requests</h4>
+                    <p id="firstline"><img src="images\todd-s.jpg" alt="Pofile Picture">Todd E<img
+                            onclick="disappear()" src="1614282895__icons\icons\accept-circle.png" alt="check circle"><img
+                            onclick="disappear1()" src="1614282895__icons\icons\close-circle.png" alt="X-circle"> </p>
+                    <p id="secondline"><img src="images\phil-s.jpg" alt="Pofile Picture"> Phil K <img
+                            onclick="disappear2()" src="1614282895__icons\icons\accept-circle.png" alt="check circle"><img
+                            onclick="disappear3()" src="1614282895__icons\icons\close-circle.png" alt="X-circle"> </p>
                 </aside>
                 <aside class="bottom">
-                    <h5><span class="circle2">500+</span>Your Connections</h5>
+                    <h5><span id="circle2" class="circle2">500+</span>Your Connections</h5>
                     <p><img src="images\jane-m.jpg" alt="Profile Picture">Jane M</p>
                     <p><img src="images\arry-s.jpg" alt="Profile Picture">Arry S</p>
                     <p><img src="images\anne-s.jpg" alt="Profile Picture">Anne S</p>
@@ -70,6 +70,7 @@
             </div>
         </div>
     </div>
+    <script src="pfpage.js"></script>
 </body>
 
 </html>
